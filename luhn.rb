@@ -29,7 +29,7 @@ class Luhn
       if index.even?
         new_digit = digit
       else
-        digit * 2 > 10 ? new_digit = (digit * 2) - 9 : new_digit = digit * 2
+        digit * 2 > 9 ? new_digit = (digit * 2) - 9 : new_digit = digit * 2
       end
       doubled_digits << new_digit  
     end 
